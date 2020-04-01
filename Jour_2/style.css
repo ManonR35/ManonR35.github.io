@@ -47,12 +47,13 @@ section{
 form{
   display: flex;
   flex-direction: row;
-  border-radius: 20px;
+  border-radius: 30px;
   border-width: 1px;
   border-style: solid;
   border-color: #c6c6c6;
   width: 500px;
   justify-content: space-around;
+  height: 44px;
 }
 
 #boutonsecondaire{
@@ -64,12 +65,17 @@ form{
 
 #boutonrecherche{
   display: flex;
-  justify-content: space-around;
-  /*border-style: solid; */
-  width: 600px;
+  justify-content: space-between;
+  /* border-style: solid; */
+  width: 550px;
   padding-left: 0px;
+  margin-top: 30px;
+  height: 40px;
 }
 
+#recherche:focus{
+  border: none;
+}
 
 
 #imgcompte{
@@ -100,9 +106,13 @@ input{
   border: none;
 }
 
+/* a completer pour que la bordure bleue ne s'affiche plus */
+input:{
+  border: none;
+}
+
 #recherche:focus{
   box-shadow: 2px 2px 2px #c6c6c6;
-
 }
 
 #micro{
@@ -119,7 +129,7 @@ input{
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: 0.3s;
+  transition: 0.5s;
 }
 
 #boutonrecherche li:hover{
@@ -129,10 +139,17 @@ input{
   box-shadow: 0 1px 1px #c6c6c6;
 }
 
+/* ----------- footer ----------- */
 
 footer{
   color: #5f6368;
   background-color: rgb(242, 242, 242);
+  /* doit fixer le footer en bas de la page */
+}
+
+footer a, #boutonrecherche a{
+  color: #5f6368;
+  text-decoration: none;
 }
 
 #footerdown, #footerup{
@@ -150,8 +167,6 @@ footer{
 #footerup p{
   margin: 27px; 
 }
-
-
 
 #footerdown{
   display: flex;
